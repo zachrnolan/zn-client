@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Query } from 'react-apollo'
 import gql from 'graphql-tag'
 
@@ -10,7 +10,8 @@ const Projects = () => (
         teaser
       }
     }
-  `}>
+  `}
+  >
     {({ loading, error, data }) => {
       if (loading) return <p>Loading...</p>
       if (error) return <p>Error: {error}</p>
@@ -25,15 +26,11 @@ const Projects = () => (
   </Query>
 )
 
-class Home extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Home</h1>
-        <Projects />
-      </div>
-    )
-  }
-}
+const Home = () => (
+  <div>
+    <h1>Home</h1>
+    <Projects />
+  </div>
+)
 
 export default Home

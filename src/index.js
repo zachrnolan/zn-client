@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ApolloClient from "apollo-boost"
+import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from 'react-apollo'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import './reset.css'
@@ -10,7 +10,7 @@ import Admin from './screens/Admin'
 import registerServiceWorker from './registerServiceWorker'
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000'
+  uri: 'http://localhost:4000',
 })
 
 const App = () => (
