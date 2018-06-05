@@ -1,5 +1,30 @@
+@font-face {
+  font-family: 'sf-ui-text-regular';
+  src: url('fonts/SF-UI-Text-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'sf-ui-text-medium';
+  src: url('fonts/SF-UI-Text-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'sf-ui-text-semibold';
+  src: url('fonts/SF-UI-Text-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'sf-ui-text-bold';
+  src: url('fonts/SF-UI-Text-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'sf-ui-text-heavy';
+  src: url('fonts/SF-UI-Text-Heavy.woff') format('woff');
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'sf-ui-text-regular', sans-serif;
 }
