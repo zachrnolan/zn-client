@@ -1,8 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import ApolloClient from "apollo-boost"
+import { ApolloProvider } from 'react-apollo'
 import './index.css'
 import Home from './screens/Home'
 import registerServiceWorker from './registerServiceWorker'
 
-ReactDOM.render(<Home />, document.getElementById('root'))
+const client = new ApolloClient({
+  uri: 'http://localhost:4000'
+})
+
+const App = () => (
+  <ApolloProvider client={client}>
+    <Home />
+  </ApolloProvider>
+)
+
+ReactDOM.render(<App />, document.getElementById('root'))
 registerServiceWorker()
